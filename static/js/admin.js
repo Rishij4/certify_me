@@ -6,7 +6,7 @@ function generateCaptcha(type) {
     captchas[type] = code;
     document.getElementById(type + 'CaptchaText').textContent = code;
 }
-const API_BASE = "http://127.0.0.1:5000/api";
+const API_BASE = "/api";
 let isEditMode = false;
 let editingId = null;
 generateCaptcha('login');
